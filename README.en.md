@@ -11,6 +11,10 @@ Platane Mixer is a replacement control surface for the Platane UP2 SE. The insta
 the official driver together with the new console. Source code is private. This repository
 publishes binary installers, release notes, and changelogs only.
 
+<p align="center">
+  <img src="assets/platane-mixer-0.3.1.png" alt="Platane Mixer console" width="1100">
+</p>
+
 ## Download
 
 Download the latest `PlataneMixer-Setup-<version>.exe` from [Releases](../../releases).
