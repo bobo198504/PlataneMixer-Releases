@@ -13,18 +13,22 @@ publishes binary installers, release notes, and changelogs only.
 
 <p align="center">
   <img src="assets/platane-mixer-0.3.1.png" alt="Platane Mixer console" width="1100">
+  <br>
+  <img src="assets/platane-mixer-0.3.2-light.png" alt="Platane Mixer light theme" width="1100">
+  <br>
+  <sub>Dark and light themes</sub>
 </p>
 
 ## Download
 
 Download the latest `PlataneMixer-Setup-<version>.exe` from [Releases](../../releases).
 
-Current version: `0.3.1`
+Current version: `0.3.2`
 
 SHA-256:
 
 ```text
-4783F4B61496CE33307D0E078E25583F4041C9EE45BCE6645423AA91DC72155C
+3914ACB17277E9FCB99957DBABEF44C9E3C1146AD17EFFC619CB7EEEC2A4EEED
 ```
 
 ## Features

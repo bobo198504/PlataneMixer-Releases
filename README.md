@@ -10,18 +10,22 @@ Platane Mixer 是 Platane UP2 SE 官方控制台的替代方案，安装包同�
 
 <p align="center">
   <img src="assets/platane-mixer-0.3.1.png" alt="Platane Mixer 主控台" width="1100">
+  <br>
+  <img src="assets/platane-mixer-0.3.2-light.png" alt="Platane Mixer 浅色主题" width="1100">
+  <br>
+  <sub>深色与浅色主题 / Dark and light themes</sub>
 </p>
 
 ## 下载
 
 请从 [Releases](../../releases) 下载最新的 `PlataneMixer-Setup-<版本>.exe`。
 
-当前版本：`0.3.1`
+当前版本：`0.3.2`
 
 SHA-256：
 
 ```text
-4783F4B61496CE33307D0E078E25583F4041C9EE45BCE6645423AA91DC72155C
+3914ACB17277E9FCB99957DBABEF44C9E3C1146AD17EFFC619CB7EEEC2A4EEED
 ```
 
 ## 功能

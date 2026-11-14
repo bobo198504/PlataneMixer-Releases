@@ -2,6 +2,25 @@
 
 [中文](CHANGELOG.md)
 
+## 0.3.2 — Plugin ordering, classification, and light theme
+
+### Plugins
+
+- Reordering now reuses loaded VST instances and only changes DSP processing order; plugins are no longer destroyed and reloaded.
+- Plugin parameters, bypass, send level, alias, and instance state follow the plugin.
+- VST3/VST3i classification follows the primary plugin type; VST2 uses Synth/Instrument metadata.
+- Legacy catalog entries are migrated automatically; VST2 plugins with unverifiable type metadata are no longer treated as usable effects.
+- Stereo suffixes from vendors such as Waves are hidden only when a matching Mono variant exists. Genuine standalone Stereo names remain unchanged.
+
+### UI
+
+- The light-theme LED now uses a bright background with dark text, with adjusted screen, value, and send-bar contrast.
+- Dark and light theme screenshots are included in the public release description.
+
+### Installer
+
+- Version updated to `0.3.2`.
+
 ## 0.3.1 — First public release
 
 First public binary release, covering the completed console, driver deployment, resident audio
