@@ -19,14 +19,7 @@ Platane Mixer 是 Platane UP2 SE 官方控制台的替代方案，安装包同�
 ## 下载
 
 请从 [Releases](../../releases) 下载最新的 `PlataneMixer-Setup-<版本>.exe`。
-
-当前版本：`0.3.4`
-
-SHA-256：
-
-```text
-E84070A85B3B585381516E6FC1FD342B94B11E9E895B4A3302F44F4C2D31FA0A
-```
+版本说明和安装包哈希只在对应 Release 中维护。
 
 ## 功能
 

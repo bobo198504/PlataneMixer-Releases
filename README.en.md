@@ -22,14 +22,7 @@ publishes binary installers, release notes, and changelogs only.
 ## Download
 
 Download the latest `PlataneMixer-Setup-<version>.exe` from [Releases](../../releases).
-
-Current version: `0.3.4`
-
-SHA-256:
-
-```text
-E84070A85B3B585381516E6FC1FD342B94B11E9E895B4A3302F44F4C2D31FA0A
-```
+Version notes and installer hashes are maintained only in the corresponding release.
 
 ## Features
 
