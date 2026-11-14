@@ -2,6 +2,34 @@
 
 [中文](CHANGELOG.md)
 
+## 0.3.4 - ASIO host stability and window placement
+
+### Audio and power lifecycle
+
+- Releases the standalone ASIO host and private return routing before lock or system suspend.
+- Restores the audio host two seconds after unlock or resume.
+- A second lock before the delayed restore cancels the pending restart.
+- The vendor ASIO engine and ASIO instances owned by DAWs are not stopped or modified.
+
+### ASIO host
+
+- Adds ASIO selector, engine-version, and `bufferSwitchTimeInfo` protocol support.
+- Maintains ASIO speed, system time, sample position, and validity flags.
+- Handles reset, resync, buffer-size, and actual sample-rate changes.
+- Safely rebuilds the ASIO stream inside the resident process when callbacks do not start or stop.
+- No longer depends on repeatedly terminating and restarting `PlataneAudioEngine.exe`.
+- Adds `%LOCALAPPDATA%\PlataneMixer2\audio-engine.health` diagnostics.
+
+### Multi-monitor
+
+- Saves monitor identity, monitor-relative offset, and physical window coordinates.
+- Restores the console anchor after display, resolution, or primary-monitor changes.
+- System-driven temporary moves no longer trigger edge snapping or overwrite the saved position.
+
+### Installer
+
+- Version updated to `0.3.4`.
+
 ## 0.3.2 — Plugin ordering, classification, and light theme
 
 ### Plugins

@@ -2,6 +2,33 @@
 
 [English](CHANGELOG.en.md)
 
+## 0.3.4 - ASIO 宿主稳定性与窗口位置
+
+### 音频与电源生命周期
+
+- 锁屏或系统进入休眠时，先正常释放自研 ASIO 宿主和私有回传路由；解锁或唤醒后延迟 2 秒恢复。
+- 解锁后再次锁屏会取消尚未执行的恢复，避免在安全桌面或睡眠期间重新启动 ASIO。
+- 不停止原厂 ASIO 引擎，不触碰 DAW 自己持有的 ASIO 实例。
+
+### ASIO 宿主
+
+- 补齐 ASIO selector、engine version 和 bufferSwitchTimeInfo 协议。
+- 维护 ASIO 的 speed、system time、sample position 和有效标志。
+- 处理 reset、resync、缓冲大小和实际采样率变化。
+- 回调没有启动或运行中停止时，在常驻进程内部安全重建 ASIO 流。
+- 不再依赖外部反复结束并拉起 `PlataneAudioEngine.exe`。
+- 新增 `%LOCALAPPDATA%\PlataneMixer2\audio-engine.health`，记录回调数量、回调和恢复状态。
+
+### 多显示器
+
+- 控台位置同时保存显示器设备、屏幕内相对位置和物理坐标。
+- 切换显示器、分辨率或主屏后，等待系统布局稳定，再恢复到原显示器锚点。
+- 系统造成的临时窗口移动不再触发边缘吸附，也不再覆盖用户保存的位置。
+
+### 安装包
+
+- 版本更新为 `0.3.4`。
+
 ## 0.3.2 — 插件排序、分类与浅色主题
 
 ### 插件

@@ -23,12 +23,12 @@ publishes binary installers, release notes, and changelogs only.
 
 Download the latest `PlataneMixer-Setup-<version>.exe` from [Releases](../../releases).
 
-Current version: `0.3.2`
+Current version: `0.3.4`
 
 SHA-256:
 
 ```text
-3914ACB17277E9FCB99957DBABEF44C9E3C1146AD17EFFC619CB7EEEC2A4EEED
+E84070A85B3B585381516E6FC1FD342B94B11E9E895B4A3302F44F4C2D31FA0A
 ```
 
 ## Features
@@ -38,11 +38,13 @@ SHA-256:
 - Automatic UP2 SE detection with device, firmware, and driver versions.
 - Device reset from the connected state.
 - Resident audio service separated from the UI; closing the console or tray does not stop ASIO audio.
+- Releases the standalone ASIO host before lock or sleep and restores it after unlock or resume.
+- Handles ASIO reset/resync, sample-rate, and buffer changes; stalled callbacks can be rebuilt in-process.
 - Tray controls, single/double-click activation, always-on-top, zoom, startup launch, and global show hotkey.
 - Global volume/mute hotkeys and tray-wheel volume control.
 - Dark, light, and system themes.
 - Chinese, English, and system-following UI languages.
-- Window-position persistence and screen-edge snapping.
+- Window-position persistence, screen-edge snapping, and monitor-anchor recovery after display-layout changes.
 
 ### Channels and mixing
 
