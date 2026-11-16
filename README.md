@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-> **个人项目，无任何商业用途。仅适用于 Platane UP2 SE。**
+> **个人项目，无任何商业用途。仅支持 Platane UP2 SE。**
 >
 > 本项目与 Platane、Native Instruments、Steinberg 及其他厂商无隶属或授权关系。
 
