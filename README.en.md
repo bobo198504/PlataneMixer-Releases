@@ -32,8 +32,8 @@ Version notes and installer hashes are maintained only in the corresponding rele
 - Device reset from the connected state.
 - Resident audio service separated from the UI; closing the console or tray does not stop ASIO audio.
 - Releases the standalone ASIO host before lock or sleep and restores it after unlock or resume.
-- Handles ASIO reset/resync, sample-rate, and buffer changes; stalled callbacks can be rebuilt in-process.
-- Tray controls, single/double-click activation, always-on-top, zoom, startup launch, and global show hotkey.
+- Handles ASIO reset/resync, follows the console sample rate and buffer settings, and rebuilds stalled callbacks in-process.
+- Left-click the tray icon to toggle the console, which does not occupy a taskbar button; the right-click menu includes always-on-top and auto-hide on focus loss.
 - Global volume/mute hotkeys and tray-wheel volume control.
 - Dark, light, and system themes.
 - Chinese, English, and system-following UI languages.
@@ -74,7 +74,7 @@ Version notes and installer hashes are maintained only in the corresponding rele
 - Native plugin windows sized according to the plugin’s supported size.
 - Click to enable/disable, double-click or right-click for the editor, drag reorder, rename, replace, and delete.
 - Send plugins support drag and wheel level adjustment.
-- Plugin state, parameters, aliases, and topology are saved with user data and presets.
+- Plugin state, parameters, aliases, and topology are saved with user data and presets; aliases can be global or local to one slot.
 - Background plugin preloading after the audio engine starts.
 
 ### Presets and settings
